@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Lehenengo proba</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
-        /* Import roboto font */
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
         :root {
@@ -15,17 +14,24 @@
         }
 
         * {
-            font-family: 'Roboto', sans-serif;
-            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none !important;
             margin: 0;
             padding: 0;
-            overflow: hidden;
         }
 
         img {
-            width: 200px;
             height: 200px;
+            width: 200px;
             object-fit: cover;
+        }
+
+        h1, h2, p, a {
+            font-weight: 500;
+        }
+
+        span {
+            font-weight: 700;
         }
 
         .notificacion {
@@ -38,33 +44,36 @@
 
 <body>
     <div class="container p-3">
-        <ul class="list-group flex-md-row">
-            <li class="list-group-item rounded-left text-white bg-primary border border-primary">Lorem ipsum
-                <span class="notificacion bg-success text-light">14</span>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item text-white bg-primary border border-primary">
+                Lorem ipsum
+                <span class="notificacion bg-success text-light ml-2">14</span>
             </li>
-            <li class="list-group-item rounded-0 border border-left-0">Dolor sit amet
-                <span class="notificacion bg-primary text-light">2</span>
+            <li class="list-group-item border border-left-0">
+                Dolor sit amet
+                <span class="notificacion bg-primary text-light ml-2">2</span>
             </li>
-            <li class="list-group-item rounded-right border border-left-0">Consectetur adipiscing elit
-                <span class="notificacion bg-primary text-light">10</span>
+            <li class="list-group-item border border-left-0">
+                Consectetur adipiscing elit
+                <span class="notificacion bg-primary text-light ml-2">10</span>
             </li>
         </ul>
 
-        <h1 class="text-danger">1.Maila</h1>
-        <h2 class="text-info">2.Maila</h2>
+        <h1 class="text-danger mb-3">1. Maila</h1>
+        <h2 class="text-info mb-3">2. Maila</h2>
 
-        <p class="font-weight-bold" style=" font-weight: 600;">Kaixo</p>
+        <p>Kaixo</p>
 
-        <img src="https://ikasten.io/images/desert.jpg" alt="Basamortua" class="rounded-circle">
+        <img src="https://ikasten.io/images/desert.jpg" alt="Basamortua" class="rounded-circle mb-4">
 
         <p>
-            <a href="https://ehu.eus" class="text-info font-weight-bold">EHU</a>
+            <a href="https://ehu.eus" class="text-info">EHU</a>
         </p>
 
         <form action="">
-            <span style="font-weight: 600;">Sartu zure izena:</span>
-            <input type="text" placeholder="Ane">
-            <input class="btn btn-primary" type="submit" value="Bidali">
+            <label for="name">Sartu zure izena:</label>
+            <input type="text" placeholder="Ane" class="form-control w-25 d-inline-block">
+            <input class="btn btn-primary ml-2" type="submit" value="Bidali">
         </form>
     </div>
 </body>
