@@ -1,97 +1,72 @@
 <!DOCTYPE html>
 <html lang="eus">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Lehenengo proba</title>
-        
-        <style>
-            h1 {
-                color: #d9534f;
-                font-family: roboto;
-            }
-            h2 {
-                color: #5bc0de;
-                font-family: roboto;
-            }
-            /*do not underline links*/
-            a {
-                text-decoration: none;
-                font-weight:600;
-            }
-            .list-group-item{
-                font-weight:500;
-            }
-            .input-circular {
-                width: 65px;
-                height: 37px;
-                border-radius: 10%;
-                border: none;
-            }
-            .image-size {
-                width: 630px;
-                height: auto;
-                width: 200px; /* Ajusta el tamaño de la imagen */
-                height: 200px; /* Asegúrate de que sea cuadrada */
-                border-radius: 50%; /* Hace la imagen circular */
-                object-fit: cover;
-            }
-            .notificacion {
-            background-color: #28a745;
-            color: white;
+<head>
+    <meta charset="UTF-8">
+    <title>Lehenengo proba</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Import roboto font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        :root {
+            --light-gray: rgba(0, 0, 0, .125);
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .notificacion {
             font-size: 12px;
             padding: 2px 8px;
             border-radius: 12px;
-            margin-left: 8px; /* Hace la burbuja redondeada */
-            }
-            .notificacion2 {
-            background-color: #0974ed;
-            color: white;
-            font-size: 14px;
-            padding: 2px 8px;
-            border-radius: 12px; /* Hace la burbuja redondeada */
-            }
-            .list-group.list-group.flex-md-row{
-                overflow: hidden;
-            }
-        </style>
+        }
+    </style>
+</head>
 
-        <!-- include bootstrap-->
+<body>
+    <div class="bg-dark container p-3">
+        <ul class="list-group flex-md-row">
+            <li class="list-group-item rounded-left text-white bg-primary border border-primary">Lorem ipsum
+                <span class="notificacion bg-success text-light">14</span>
+            </li>
+            <li class="list-group-item rounded-0 border border-left-0">Dolor sit amet
+                <span class="notificacion bg-primary text-light">2</span>
+            </li>
+            <li class="list-group-item rounded-right border border-left-0">Consectetur adipiscing elit
+                <span class="notificacion bg-primary text-light">10</span>
+            </li>
+        </ul>
 
-    </head>
+        <h1 class="text-danger">1.Maila</h1>
+        <h2 class="text-info">2.Maila</h2>
 
-    <body>
-        <dic class="content">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <p class="font-weight-bold" style=" font-weight: 600;">Kaixo</p>
 
-            <ul class="list-group flex-md-row">
-                <li class="list-group-item" style="background-color: #0974ed; color: white;">Lorem ipsum 
-                    <span class="notificacion">14</span>
-                </li>
-                <li class="list-group-item">Dolor sit amet
-                    <span class="notificacion2">2</span>
-                </li>
-                <li class="list-group-item">Consectetur adipiscing elit
-                    <span class="notificacion2">10</span>
-                </li>
-            </ul>
-            
-             <h1>1.Maila</h1>
-             <h2>2.Maila</h2>
+        <img src="https://ikasten.io/images/desert.jpg" alt="Basamortua" class="rounded-circle">
 
-            <p style=" font-weight: 600;">Kaixo</p>
+        <p>
+            <a href="https://ehu.eus" class="text-info font-weight-bold">EHU</a>
+        </p>
 
-            <img src="https://ikasten.io/images/desert.jpg" alt="Basamortua" class="image-size">
-            
-            <p>
-                <a href="https.//ehu.eus" style="font-size:2.5ch;">EHU</a>
-            </p>
+        <form action="">
+            <span style="font-weight: 600;">Sartu zure izena:</span>
+            <input type="text" placeholder="Ane">
+            <input class="btn btn-primary" type="submit" value="Bidali">
+        </form>
+    </div>
+</body>
 
-            <form action="">
-                <span style="font-weight: 600;">Sartu zure izena:</span>
-                <input type="text" placeholder="Ane" style="font-weight: 500;">
-                <input class="input-circular" type="submit" value="Bidali" style="background-color: #0974ed; color: white;">    
-            </form>
-        </dic>
-    </body>
 </html>
