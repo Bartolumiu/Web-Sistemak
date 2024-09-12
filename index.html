@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eus">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Lehenengo proba</title>
+        
+        <style>
+            h1 {
+                color: #d9534f;
+                font-family: roboto;
+            }
+            h2 {
+                color: #5bc0de;
+                font-family: roboto;
+            }
+            /*do not underline links*/
+            a {
+                text-decoration: none;
+                font-weight:600;
+            }
+            .list-group-item{
+                font-weight:500;
+            }
+            .input-circular {
+                width: 65px;
+                height: 37px;
+                border-radius: 10%;
+                border: none;
+            }
+            .image-size {
+                width: 630px;
+                height: auto;
+                width: 200px; /* Ajusta el tamaño de la imagen */
+                height: 200px; /* Asegúrate de que sea cuadrada */
+                border-radius: 50%; /* Hace la imagen circular */
+                object-fit: cover;
+            }
+            .notificacion {
+            background-color: #28a745;
+            color: white;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 8px; /* Hace la burbuja redondeada */
+            }
+            .notificacion2 {
+            background-color: #0974ed;
+            color: white;
+            font-size: 14px;
+            padding: 2px 8px;
+            border-radius: 12px; /* Hace la burbuja redondeada */
+            }
+            .list-group.list-group.flex-md-row{
+                overflow: hidden;
+            }
+        </style>
+
+        <!-- include bootstrap-->
+
+    </head>
+
+    <body>
+        <dic class="content">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+            <ul class="list-group flex-md-row">
+                <li class="list-group-item" style="background-color: #0974ed; color: white;">Lorem ipsum 
+                    <span class="notificacion">14</span>
+                </li>
+                <li class="list-group-item">Dolor sit amet
+                    <span class="notificacion2">2</span>
+                </li>
+                <li class="list-group-item">Consectetur adipiscing elit
+                    <span class="notificacion2">10</span>
+                </li>
+            </ul>
+            
+             <h1>1.Maila</h1>
+             <h2>2.Maila</h2>
+
+            <p style=" font-weight: 600;">Kaixo</p>
+
+            <img src="https://ikasten.io/images/desert.jpg" alt="Basamortua" class="image-size">
+            
+            <p>
+                <a href="https.//ehu.eus" style="font-size:2.5ch;">EHU</a>
+            </p>
+
+            <form action="">
+                <span style="font-weight: 600;">Sartu zure izena:</span>
+                <input type="text" placeholder="Ane" style="font-weight: 500;">
+                <input class="input-circular" type="submit" value="Bidali" style="background-color: #0974ed; color: white;">    
+            </form>
+        </dic>
+    </body>
+</html>
